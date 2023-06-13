@@ -1,0 +1,52 @@
+{
+  "bin": {
+    "soapy-dl-beta": "./dist/cli.js"
+  },
+  "name": "soapy-dl",
+  "version": "0.0.0-beta.1",
+  "description": "",
+  "main": "dist/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "dev": "nodemon --watch './**/*.ts' --exec 'node' dist/index.js download see -e 12",
+    "start": "tsc-watch --onSuccess \"node ./dist/cli.js download 'Batman' -d \"",
+    "clear": "tsc-watch --onSuccess \"node ./dist/cli.js clear \"",
+    "start:t": "tsc-watch --onSuccess \"node ./dist/cli.js download she-hulk -ep \"/data/data/com.termux/files/usr/bin/chromium-browser\" \"",
+    "h": "tsc-watch --onSuccess \"node ./dist/cli.js download -h -d \"",
+    "release": "release-it",
+    "prepare": "husky install"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "cli-progress": "^3.12.0",
+    "commander": "^10.0.1",
+    "dayjs": "^1.11.7",
+    "inquirer": "^9.1.5",
+    "inquirer-checkbox-plus-prompt": "^1.4.2",
+    "inquirer-search-list": "^1.2.6",
+    "lodash": "^4.17.21",
+    "node-downloader-helper": "^2.1.7",
+    "puppeteer": "^19.10.1",
+    "puppeteer-core": "^19.10.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "user-agents": "^1.0.1357"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "@types/node": "^20.2.5",
+    "husky": "^8.0.0",
+    "nodemon": "^2.0.22",
+    "release-it": "^15.10.3",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.0.4"
+  }
+}
