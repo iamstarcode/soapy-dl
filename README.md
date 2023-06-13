@@ -8,8 +8,8 @@ Download TV series and movies from [soap2day](https://soapy2day.ac) in your term
   1. [Package Manager Installation](#installation)
   2. [Installation from Source](#Source)
 - [Usage](#Usage)
-  1. [download](download)
-  2. [clear](clear)
+  1. [download](#download)
+  2. [clear](#clear)
 
 ## Installation
 
@@ -64,6 +64,12 @@ Options:
 
 ```bash
 soapy-dl  download "game of thrones"
+```
+
+#### `clear`
+
+```bash
+soapy-dl  clear
 ```
 
 The downloaded video will be saved in the relative path where the command was run, for movies `./downloads/Batman:-The Dark-Knight-Returns.mp4`, and for series `./downloads/See/S1/s1ep1.mp4`
