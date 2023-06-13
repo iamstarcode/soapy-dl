@@ -3,7 +3,7 @@
     "soapy-dl-beta": "./dist/cli.js"
   },
   "name": "soapy-dl",
-  "version": "0.0.0-beta.1",
+  "version": "0.0.0-beta.2",
   "description": "",
   "main": "dist/cli.js",
   "scripts": {
